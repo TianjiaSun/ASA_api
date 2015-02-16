@@ -1,0 +1,536 @@
+@charset "utf-8";
+/* CSS Document */
+
+.whole_container {
+	position:absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgb(200,200,200);
+	min-height: 600px;
+	min-width: 800px;
+	overflow: hidden;
+}
+.left_container {
+	position:relative;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgb(85, 85, 85);
+	min-height: 600px;
+	height: 100%;
+	overflow: hidden;
+	width: 245px;
+	box-shadow: 0 0 12px;
+}
+.logo{
+	font-family: arial;
+	font-size: 23px;
+	line-height: 30px;
+	position: relative;
+	top: 15px;
+	left: 0px;
+	width: 250;
+	text-align: center;
+	color: rgb(51, 204, 255);
+	text-shadow: 2px 2px 12px black;
+	font-weight: bold;
+}
+.search_app {
+	position: relative;
+	top: 28px;
+	left: 0px;
+	margin-top: 0px;
+	margin-left: 13px;
+	margin-bottom: 0px;
+	background-color: rgb(0, 176, 240);
+	height: 37px;
+	width: 222px;
+	border-radius: 25px;
+	box-shadow: 0 0 12px black;
+	color: white;
+	z-index: 4;
+	font-size: 18px;
+	font-family: arial;
+	line-height: 50px;
+}
+.search_input {
+position: absolute;
+	top: 64px;
+	left: 18px;
+	margin-top: 0px;
+	margin-left: -1px;
+	background-color: rgb(60, 60, 60);
+	height: 31px;
+	border-radius: 25px;
+	font-family: arial;
+	font-size: 16px;
+	line-height: 32px;
+	color: white;
+	padding-left: 13px;
+	z-index: 100;
+	width: 201px;
+	text-align: left;
+	color: rgb(200,200,200);
+}
+.list_container {
+	position: relative;
+	top: 36px;
+	background-color: rgb(85, 85, 85);
+	overflow: hidden;
+	width: 250px;
+	margin-top: 10px;
+}
+.app_unit {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background-color: rgb(85, 85, 85);
+	height: 78px;
+	overflow: hidden;
+	width: 250px;
+}
+.app_unit:hover {
+	background-color: rgb(0, 0, 0);
+	cursor:pointer;
+}
+.app_edge {
+	width: 58px;
+	height: 62px;
+	background: rgb(0, 0, 0);
+	border-radius: 14px;
+	margin-top: 9px;
+	margin-left: 22px;
+	box-shadow: 0 0 10px white;
+}
+.app_image {
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	background: rgb(51, 204, 255);
+	border-radius: 12px;
+	margin-top: -62px;
+	margin-left: 23px;
+	box-shadow: 0 1px 5px white;
+}
+.app_name {
+	position: absolute;
+	top: 12px;
+	left: 92px;
+	font-family: arial;
+	color: rgb(231, 231, 231);
+	font-size: 17px;
+}
+.app_discription {
+	position: absolute;
+	top: 33px;
+	left: 92px;
+	font-family: arial;
+	color: rgb(177, 176, 176);
+	font-size: 14px;
+}
+.app_price {
+	position: absolute;
+	top: 51px;
+	left: 92px;
+	font-family: arial;
+	color: rgb(51, 204, 255);
+	font-size: 14px;
+}
+.dialog_container {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	left: 246px;
+	min-height: 600px;
+	min-width: 600px;
+	background-color: transparent;
+	overflow-y: scroll;
+}
+.one_dialog {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	margin-left: 0;
+	margin-right: 0;
+	min-height: 80px;
+	width: 100%;
+	background-color: transparent;
+	margin-top: 5px;
+}
+.left_dialog_app_edge {
+	width: 54px;
+	position: absolute;
+	height: 57px;
+	background: rgb(0, 0, 0);
+	border-radius: 14px;
+	margin-top: 6px;
+	margin-left: 40px;
+	box-shadow: 0 0 10px white;
+}
+.right_dialog_app_edge {
+	position: absolute;
+	float: right;
+	right: 40px;
+	margin-top: 6px;
+	margin-right: 0;
+	width: 54px;
+	height: 57px;
+	background: rgb(0, 0, 0);
+	border-radius: 14px;
+	box-shadow: 0 0 10px white;
+}
+.left_dialog_app_image {
+	position: absolute;
+	width: 52px;
+	height: 52px;
+	background: rgb(51, 204, 255);
+	border-radius: 12px;
+	margin-top: 6px;
+	margin-left: 41px;
+	box-shadow: 0 1px 5px white;
+}
+.left_dialog_app_image:hover {
+	cursor: pointer;
+}
+.right_dialog_app_image {
+	position: absolute;
+	width: 52px;
+	float: right;
+	right: 41px;
+	height: 52px;
+	background: rgb(255, 157, 0);
+	border-radius: 12px;
+	margin-top: 6px;
+	margin-left: 41px;
+	box-shadow: 0 1px 5px white;
+}
+.left_dialog_app_name {
+	position: absolute;
+	margin-top: 66px;
+	margin-left: 3px;
+	font-family: arial;
+	color: rgb(50, 50, 50);
+	font-size: 14px;
+	width: 130px;
+	text-align: center;
+	background: transparent;
+	font-weight: bold;
+}
+.left_dialog_app_name:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+.right_dialog_app_name {
+	position: absolute;
+	float: right;
+	right: 3px;
+	margin-top: 66px;
+	margin-left: 3px;
+	font-family: arial;
+	color: rgb(50, 50, 50);
+	font-size: 14px;
+	width: 130px;
+	text-align: center;
+	background: transparent;
+	font-weight: bold;
+}
+.left_dialog_container {
+	position: relative;
+	top: 9px;
+	margin-left: 126px;
+	left: -3px;
+	margin-bottom: 10px;
+	width: auto;
+	min-width: 100px;
+	min-height: 22px;
+	background: rgb(120, 120, 120);
+	border-radius: 12px;
+	box-shadow: 0 0 13px rgb(255, 255, 255);
+	display: inline-block;
+	padding-left: 12px;
+	padding-right: 16px;
+	padding-top: 3px;
+	padding-bottom: 9px;
+}
+.right_dialog_container {
+	position: relative;
+	top: 9px;
+	float: right;
+	margin-right: 126px;
+	left: -3px;
+	margin-bottom: 10px;
+	width: auto;
+	min-width: 80px;
+	min-height: 22px;
+	background: rgb(255, 157, 0);
+	border-radius: 12px;
+	box-shadow: 0 0 12px rgb(255, 255, 255);
+	display: inline-block;
+	padding-left: 12px;
+	padding-right: 16px;
+	padding-top: 10px;
+	padding-bottom: 9px;
+}
+.left_dialog_container:before {
+	content: "";
+	position: absolute;
+	right: 100%;
+	top: 11px;
+	width: 0;
+	height: 0;
+	border-top: 9px solid transparent;
+	border-right: 20px solid rgb(120, 120, 120);
+	border-bottom: 9px solid transparent;
+}
+.right_dialog_container:before {
+	content: "";
+	position: absolute;
+	left: 100%;
+	top: 11px;
+	width: 0;
+	height: 0;
+	border-top: 9px solid transparent;
+	border-left: 20px solid rgb(255, 157, 0);
+	border-bottom: 9px solid transparent;
+}
+.left_dialog_container:hover {
+	box-shadow: 0 0 12px rgb(0, 176, 240);
+}
+.right_dialog_container:hover {
+	box-shadow: 0 0 12px rgb(0, 0, 0);
+}
+.right_expend_button {
+	position: absolute;
+	float: right;
+	right: 13px;
+	top: 9px;
+	font-family: arial;
+	font-size: 24px;
+	font-weight: bold;
+	background: rgb(214, 214, 214);
+	border-radius: 15px;
+	height: 22px;
+	width: 22px;
+	text-align: center;
+	color: rgb(85, 85, 85);
+	line-height: 22px;
+	box-shadow: 0 0 5px rgb(15, 15, 15);
+}
+.right_expend_button:hover {
+	background: rgb(51, 176, 240);
+	color: white;
+	cursor: pointer;
+}
+.left_dialog_text{
+	font-family: arial;
+	font-size: 17px;
+	color: white;
+	line-height: 22px;
+	text-align: left;
+	padding-top: 7px;
+}
+.right_dialog_text{
+	font-family: arial;
+	font-size: 17px;
+	color: black;
+	font-weight: bold;
+	line-height: 22px;
+	text-align: left;
+	padding-right: 45px;
+}
+.left_dialog_header{
+	font-family: arial;
+	font-size: 19px;
+	color: rgb(255, 157, 0);
+	line-height: 28px;
+	text-align: left;
+}
+.bottom_container {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-bottom: 40px;
+	margin-left: 303px;
+	margin-right: 70px;
+	background-color: rgb(0, 176, 240);
+	height: 50px;
+	border-radius: 25px;
+	box-shadow: 0 0 12px;
+	border: 2px rgb(138, 188, 204);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.bottom_option {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	margin-bottom: 45px;
+	margin-left: 310px;
+	background-color: rgb(255, 157, 0);
+	height: 40px;
+	width: 40px;
+	border-radius: 25px;
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 42px;
+	color: white;
+	text-align: center;
+	box-shadow: 0 0 10px black;
+}
+.bottom_option:hover {
+	background-color: black;
+	cursor: pointer;
+}
+.option_line_1 {
+	position: relative;
+	top: 11px;
+	left: 8px;
+	background-color: rgb(250, 250, 250);
+	height: 4px;
+	width: 23px;
+	border-radius: 0;
+}
+.option_line_2 {
+	position: relative;
+	top: 14px;
+	left: 8px;
+	background-color: rgb(250, 250, 250);
+	height: 4px;
+	width: 23px;
+	border-radius: 0;
+}
+.option_line_3 {
+	position: relative;
+	top: 17px;
+	left: 8px;
+	background-color: rgb(250, 250, 250);
+	height: 4px;
+	width: 23px;
+	border-radius: 0;
+}
+.bottom_input {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-bottom: 45px;
+	margin-left: 356px;
+	margin-right: 203px;
+	background-color: rgb(80, 80, 80);
+	height: 40px;
+	border-radius: 25px;
+	font-family: arial;
+	font-size: 18px;
+	line-height: 40px;
+	color: rgb(220,220,220);
+	padding-left: 20px;
+}
+.bottom_send {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin-bottom: 45px;
+	margin-right: 75px;
+	background-color: rgb(255, 157, 0);
+	height: 40px;
+	width: 120px;
+	border-radius: 25px;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 42px;
+	color: rgb(250, 250, 250);
+	text-align: center;
+	box-shadow: 0 0 10px black;
+}
+.bottom_send:hover{
+	background-color: rgb(0, 0, 0);
+	cursor:pointer;
+}
+.fadeIn {
+        /* CSS needed for animation
+        ---------------------------------------------------- */
+        opacity:0;
+        -webkit-animation:fadeIn ease-in 1;
+        -moz-animation:fadeIn ease-in 1;
+        -o-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+        -webkit-animation-fill-mode:forwards;
+        -moz-animation-fill-mode:forwards;
+        -o-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+}
+/* Animation Times - Time for image to fade in
+---------------------------------------------------- */
+.fadeIn-20ms {
+        -webkit-animation-duration:0.2s;
+        -moz-animation-duration:0.2s;
+        -o-animation-duration:0.2s;
+        animation-duration:0.2s;
+}
+.fadeIn-50ms {
+        -webkit-animation-duration:0.5s;
+        -moz-animation-duration:0.5s;
+        -o-animation-duration:0.5s;
+        animation-duration:0.5s;
+}
+.fadeIn-100ms {
+        -webkit-animation-duration:1s;
+        -moz-animation-duration:1s;
+        -o-animation-duration:1s;
+        animation-duration:1s;
+}
+.fadeIn-150ms {
+        -webkit-animation-duration:1.5s;
+        -moz-animation-duration:1.5s;
+        -o-animation-duration:1.5s;
+        animation-duration:1.5s;
+}
+/* Animation Delay - Time for image to be delayed
+---------------------------------------------------- */
+.fadeIn-Delay-20ms {
+        -webkit-animation-delay:0.2s;
+        -moz-animation-delay:0.2s;
+        -o-animation-delay:0.2s;
+        animation-delay:0.2s;
+}
+.fadeIn-Delay-50ms {
+        -webkit-animation-delay:0.5s;
+        -moz-animation-delay:0.5s;
+        -o-animation-delay:0.5s;
+        animation-delay:0.5s;
+}
+.fadeIn-Delay-100ms {
+        -webkit-animation-delay:1s;
+        -moz-animation-delay:1s;
+        -o-animation-delay:1s;
+        animation-delay:1s;
+}
+.fadeIn-Delay-150ms {
+        -webkit-animation-delay:1.5s;
+        -moz-animation-delay:1.5s;
+        -o-animation-delay:1.5s;
+        animation-delay:1.5s;
+}
+.fadeIn-Delay-200ms {
+        -webkit-animation-delay:2s;
+        -moz-animation-delay:2s;
+        -o-animation-delay:2s;
+        animation-delay:2s;
+}
+/* Key Frames
+---------------------------------------------------- */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
