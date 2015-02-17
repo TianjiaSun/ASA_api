@@ -1,13 +1,25 @@
 @charset "utf-8";
 /* CSS Document */
 
+.background_img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+/*	-webkit-filter: blur(25px);
+	-moz-filter: blur(25px);
+	-o-filter: blur(25px);
+	-ms-filter: blur(25px);
+	filter: blur(25px);*/
+}
 .whole_container {
 	position:absolute;
 	top: 0px;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	background-color: rgb(200,200,200);
+/*	background-color: rgb(200,200,200);*/
 	min-height: 600px;
 	min-width: 800px;
 	overflow: hidden;
@@ -21,17 +33,19 @@
 	min-height: 600px;
 	height: 100%;
 	overflow: hidden;
-	width: 245px;
+	width: 300px;
 	box-shadow: 0 0 12px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 .logo{
 	font-family: arial;
-	font-size: 23px;
+	font-size: 28px;
 	line-height: 30px;
 	position: relative;
 	top: 15px;
 	left: 0px;
-	width: 250;
+	width: 300;
 	text-align: center;
 	color: rgb(51, 204, 255);
 	text-shadow: 2px 2px 12px black;
@@ -46,7 +60,7 @@
 	margin-bottom: 0px;
 	background-color: rgb(0, 176, 240);
 	height: 37px;
-	width: 222px;
+	width: 255px;
 	border-radius: 25px;
 	box-shadow: 0 0 12px black;
 	color: white;
@@ -56,8 +70,8 @@
 	line-height: 50px;
 }
 .search_input {
-position: absolute;
-	top: 64px;
+	position: absolute;
+	top: 65px;
 	left: 18px;
 	margin-top: 0px;
 	margin-left: -1px;
@@ -70,17 +84,27 @@ position: absolute;
 	color: white;
 	padding-left: 13px;
 	z-index: 100;
-	width: 201px;
+	width: 247px;
 	text-align: left;
 	color: rgb(200,200,200);
 }
 .list_container {
 	position: relative;
-	top: 36px;
+	top: 32px;
 	background-color: rgb(85, 85, 85);
 	overflow: hidden;
-	width: 250px;
+	width: 283px;
 	margin-top: 10px;
+}
+.list_selected {
+	background: #33b0f0; /* Old browsers */
+	background: -moz-linear-gradient(top,  #33b0f0 0%, #555555 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#33b0f0), color-stop(100%,#555555)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #33b0f0 0%,#555555 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #33b0f0 0%,#555555 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #33b0f0 0%,#555555 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #33b0f0 0%,#555555 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33b0f0', endColorstr='#555555',GradientType=0 ); /* IE6-9 */
 }
 .app_unit {
 	position: relative;
@@ -89,10 +113,16 @@ position: absolute;
 	background-color: rgb(85, 85, 85);
 	height: 78px;
 	overflow: hidden;
-	width: 250px;
+	width: 290px;
 }
 .app_unit:hover {
-	background-color: rgb(0, 0, 0);
+	background: -moz-linear-gradient(top,  #33b0f0 0%, #555555 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#33b0f0), color-stop(100%,#555555)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #33b0f0 0%,#555555 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #33b0f0 0%,#555555 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #33b0f0 0%,#555555 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #33b0f0 0%,#555555 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33b0f0', endColorstr='#555555',GradientType=0 ); /* IE6-9 */
 	cursor:pointer;
 }
 .app_edge {
@@ -101,7 +131,7 @@ position: absolute;
 	background: rgb(0, 0, 0);
 	border-radius: 14px;
 	margin-top: 9px;
-	margin-left: 22px;
+	margin-left: 16px;
 	box-shadow: 0 0 10px white;
 }
 .app_image {
@@ -111,21 +141,21 @@ position: absolute;
 	background: rgb(51, 204, 255);
 	border-radius: 12px;
 	margin-top: -62px;
-	margin-left: 23px;
+	margin-left: 17px;
 	box-shadow: 0 1px 5px white;
 }
 .app_name {
 	position: absolute;
-	top: 12px;
-	left: 92px;
+	top: 10px;
+	left: 86px;
 	font-family: arial;
 	color: rgb(231, 231, 231);
-	font-size: 17px;
+	font-size: 16px;
 }
 .app_discription {
 	position: absolute;
 	top: 33px;
-	left: 92px;
+	left: 86px;
 	font-family: arial;
 	color: rgb(177, 176, 176);
 	font-size: 14px;
@@ -133,12 +163,12 @@ position: absolute;
 .app_price {
 	position: absolute;
 	top: 51px;
-	left: 92px;
+	left: 86px;
 	font-family: arial;
 	color: rgb(51, 204, 255);
 	font-size: 14px;
 }
-.dialog_container {
+#dialog_container {
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -146,7 +176,7 @@ position: absolute;
 	padding-top: 15px;
 	padding-bottom: 0px;
 	padding-right: 0px;
-	left: 246px;
+	left: 300px;
 	min-height: 600px;
 	min-width: 600px;
 	background-color: transparent;
@@ -161,7 +191,8 @@ position: absolute;
 	min-height: 80px;
 	width: 100%;
 	background-color: transparent;
-	margin-top: 5px;
+	margin-top: 15px;
+	padding-right: 150px;
 }
 .left_dialog_app_edge {
 	width: 54px;
@@ -248,10 +279,11 @@ position: absolute;
 	margin-bottom: 10px;
 	width: auto;
 	min-width: 100px;
+	max-width: 64vw;
 	min-height: 22px;
 	background: rgb(120, 120, 120);
 	border-radius: 12px;
-	box-shadow: 0 0 13px rgb(255, 255, 255);
+	box-shadow: 0 0 13px 2px rgb(255, 255, 255);
 	display: inline-block;
 	padding-left: 12px;
 	padding-right: 16px;
@@ -270,7 +302,7 @@ position: absolute;
 	min-height: 22px;
 	background: rgb(255, 157, 0);
 	border-radius: 12px;
-	box-shadow: 0 0 12px rgb(255, 255, 255);
+	box-shadow: 0 0 12px 2px rgb(255, 255, 255);
 	display: inline-block;
 	padding-left: 12px;
 	padding-right: 16px;
@@ -300,10 +332,10 @@ position: absolute;
 	border-bottom: 9px solid transparent;
 }
 .left_dialog_container:hover {
-	box-shadow: 0 0 12px rgb(0, 176, 240);
+	box-shadow: 0 0 12px 2px rgb(0, 176, 240);
 }
 .right_dialog_container:hover {
-	box-shadow: 0 0 12px rgb(0, 0, 0);
+	box-shadow: 0 0 12px 2px rgb(0, 0, 0);
 }
 .right_expend_button {
 	position: absolute;
@@ -357,7 +389,7 @@ position: absolute;
 	left: 0px;
 	right: 0px;
 	margin-bottom: 40px;
-	margin-left: 303px;
+	margin-left: 337px;
 	margin-right: 70px;
 	background-color: rgb(0, 176, 240);
 	height: 50px;
@@ -373,7 +405,7 @@ position: absolute;
 	bottom: 0px;
 	left: 0px;
 	margin-bottom: 45px;
-	margin-left: 310px;
+	margin-left: 343px;
 	background-color: rgb(255, 157, 0);
 	height: 40px;
 	width: 40px;
@@ -423,7 +455,7 @@ position: absolute;
 	left: 0px;
 	right: 0px;
 	margin-bottom: 45px;
-	margin-left: 356px;
+	margin-left: 389px;
 	margin-right: 203px;
 	background-color: rgb(80, 80, 80);
 	height: 40px;

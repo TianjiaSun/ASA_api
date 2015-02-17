@@ -1,47 +1,49 @@
 <!doctype html>
-<html>
+<html lang="en" ng-app="apiApp" class="no-js">
 
 <head>
   <meta charset="utf-8">
-  <link href="style/main.css" rel="stylesheet" type="text/css">
-  <title>ASA Client JS Example - 4</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ASA API</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 
-<body>
+<body ng-controller="ASA_API_Ctrl">
+  <img class="background_img" src="img/wallpaper.jpg" width="100%" height="100%" alt="Login"/>
+
   <div class="whole_container">
-    
+
     <div class="left_container">    
       <div class="logo">ASA API <span style="font-size: 16px;">for developers</span></div>
       <div class="search_app"></div>    
       <div class="search_input">Search here...</div>
       <div class="list_container">
-        <div class="app_unit">
-          <div class="app_edge"></div>
-          <div class="app_image"></div>
-          <div class="app_name">Customers</div>
-          <div class="app_discription">Customer Data Access</div>
-          <div class="app_price">Free</div>
-        </div>
-        <div class="app_unit">
-          <div class="app_edge"></div>
-          <div class="app_image"></div>
-          <div class="app_name">Qutoes</div>
-          <div class="app_discription">Qutoe Data Access</div>
-          <div class="app_price">Free</div>
-        </div>    
-        <div class="app_unit">
-          <div class="app_edge"></div>
-          <div class="app_image"></div>
-          <div class="app_name">ServiceAPPs</div>
-          <div class="app_discription">List all services</div>
-          <div class="app_price">Free</div>
-        </div>               
+        <div ng-repeat="app in apps | filter:query | orderBy:orderProp">
+          <div 
+            class="app_unit" 
+            ng-click="showInfo(app, $index)" 
+            ng-class="{list_selected: $index == selected}"
+            >
+            <div class="app_edge"></div>
+            <div class="app_image"></div>
+            <div class="app_name">{{app.app_name}}</div>
+            <div class="app_discription">{{app.owner}}</div>
+            <div class="app_price">Price ${{app.pricing_by_month}}/month</div>
+          </div>
+        </div>         
       </div>   
-
     </div>
 
-    <div class="dialog_container">
-      <div class="one_dialog fadeIn fadeIn-50ms fadeIn-Delay-50ms">
+    <div id="dialog_container">
+
+<!--       <div class="one_dialog fadeIn fadeIn-50ms fadeIn-Delay-50ms">
         <div class="left_dialog_app_edge"></div>
         <div class="left_dialog_app_image"></div>
         <div class="left_dialog_app_name">Customers</div>
@@ -53,50 +55,61 @@
             Send "<span style="color: #FFBB28;">help</span>" to know my API.
           </div>
         </div>
-      </div>
-      <div class="one_dialog fadeIn fadeIn-50ms fadeIn-Delay-100ms">
+      </div> -->
+
+<!--       <div class="one_dialog fadeIn fadeIn-50ms fadeIn-Delay-100ms">
         <div class="right_dialog_app_edge"></div>
         <div class="right_dialog_app_image"></div>
         <div class="right_dialog_app_name">Your APP</div>
         <div class="right_dialog_container">
           <div class="right_dialog_text">help</div>
         </div>
-      </div>      
-      <div class="one_dialog fadeIn fadeIn-50ms fadeIn-Delay-150ms">
+      </div>  -->    
+
+      <div class="one_dialog fadeIn fadeIn-20ms">
         <div class="left_dialog_app_edge"></div>
         <div class="left_dialog_app_image"></div>
-        <div class="left_dialog_app_name">Customers</div>
+<!--         <div class="left_dialog_app_name">{{app.app_name}}</div> -->
         <div class="left_dialog_container">
           <div class="left_dialog_text">
-            Cool.<br/>
-          </div>  
+            Hi, I'm service APP <span style="color: #FFBB28;">{{app.app_name}}</span><br/>
+          </div> 
+        </div>
+      </div>
+
+      <div class="one_dialog fadeIn fadeIn-20ms fadeIn-Delay-20ms">
+        <div class="left_dialog_app_edge"></div>
+        <div class="left_dialog_app_image"></div>
+<!--         <div class="left_dialog_app_name">{{app.app_name}}</div> -->
+        <div class="left_dialog_container">
           <div class="left_dialog_text">
-            <span style="color: #FFBB28;">(1) Full Service Name:</span>
-            CustomerDataReadWrite<br/>
+            <span style="color: #FFBB28;">(1) app_name:</span>
+            {{app.app_name}}<br/>
           </div> 
           <div class="left_dialog_text">
-            <span style="color: #FFBB28;">(2) Service Description:</span>
-            Bala...bala...<br/>
+            <span style="color: #FFBB28;">(2) owner:</span>
+            {{app.owner}}<br/>
           </div>       
           <div class="left_dialog_text">
-            <span style="color: #FFBB28;">(3) API:</span>
-            Bala...bala...<br/>
+            <span style="color: #FFBB28;">(3) latest_version:</span>
+            {{app.latest_version}}<br/>
           </div>   
           <div class="left_dialog_text">
-            <span style="color: #FFBB28;">(4) Returns:</span>
-            Bala...bala...<br/>
+            <span style="color: #FFBB28;">(4) security_level:</span>
+            {{app.low}}<br/>
           </div>     
           <div class="left_dialog_text">
-            <span style="color: #FFBB28;">(5) Examples:</span>
-            Bala...bala...<br/>
+            <span style="color: #FFBB28;">(5) description:</span>
+            {{app.api}}<br/>
           </div>    
           <div class="left_dialog_text">
-            <span style="color: #FFBB28;">(6) Security:</span>
-            Bala...bala...<br/>
+            <span style="color: #FFBB28;">(6) example:</span>
+            {{app.example}}<br/>
           </div>  
         </div>
       </div>
-      <div class="one_dialog fadeIn fadeIn-50ms fadeIn-Delay-200ms">
+
+<!--       <div class="one_dialog fadeIn fadeIn-50ms fadeIn-Delay-200ms">
         <div class="right_dialog_app_edge"></div>
         <div class="right_dialog_app_image"></div>
         <div class="right_dialog_app_name">Your APP</div>
@@ -106,7 +119,7 @@
           </div>
           <div class="right_expend_button">+</div>
         </div>
-      </div>             
+      </div>  -->            
     </div>
     
     <div class="fadeIn fadeIn-50ms bottom_container"></div>
@@ -118,7 +131,17 @@
       <div class="fadeIn fadeIn-50ms option_line_3"></div>
     </div>
 
-
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/showcontrol.js"></script>
+    <script src="app.js"></script>
+    <script src="view1/view1.js"></script>
+    <script src="view2/view2.js"></script>
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
   </div>
 
 </body>
