@@ -109,27 +109,46 @@
         </div>
       </div>
 
-<!--       <div class="one_dialog fadeIn fadeIn-50ms fadeIn-Delay-200ms">
-        <div class="right_dialog_app_edge"></div>
-        <div class="right_dialog_app_image"></div>
-        <div class="right_dialog_app_name">Your APP</div>
-        <div class="right_dialog_container">
-          <div class="right_dialog_text">
-            GET:customer_id;LIMIT:2;
+      <div id="message_dialog">
+        <div class="one_dialog">
+          <div class="right_dialog_app_edge"></div>
+          <div class="right_dialog_app_image"></div>
+          <div class="right_dialog_app_name">Your APP</div>
+          <div class="right_dialog_container">
+            <div class="right_dialog_text">
+              {{message}}
+            </div>
+            <div class="right_expend_button">+</div>
           </div>
-          <div class="right_expend_button">+</div>
         </div>
-      </div>  -->            
+      </div>
+
+      <div id="response_dialog">
+        <div class="one_dialog fadeIn fadeIn-20ms">
+          <div class="left_dialog_app_edge"></div>
+          <div class="left_dialog_app_image"></div>
+  <!--         <div class="left_dialog_app_name">{{app.app_name}}</div> -->
+          <div class="left_dialog_container">
+            <div class="left_dialog_text">
+              {{asa_response}}
+            </div> 
+          </div>
+        </div>
+      </div>
+
     </div>
     
     <div class="fadeIn fadeIn-50ms bottom_container"></div>
-    <div class="fadeIn fadeIn-50ms bottom_send">Send to ASA</div>
-    <div class="fadeIn fadeIn-50ms bottom_input">
+    <div class="fadeIn fadeIn-50ms" id="bottom_send" type="submit" ng-click="ASAsend(app, message)">
+      Send to ASA
+    </div>
+    <div id="bottom_input" class="fadeIn fadeIn-50ms">
       <input
         class="bottom_input_text"
         type="text"
         name="asa_input"
-        placeholder="Talk to this service here..."
+        placeholder={{app.example}}
+        ng-model="message" ng-initial
       >
       </input>
     </div>
