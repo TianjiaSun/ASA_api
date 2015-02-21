@@ -34,7 +34,7 @@
             <div class="app_edge"></div>
             <div class="app_image"></div>
             <div class="app_name">{{app.app_name}}</div>
-            <div class="app_discription">{{app.owner}}</div>
+            <div class="app_discription">{{app.short_description}}</div>
             <div class="app_price">Price ${{app.pricing_by_month}}/month</div>
           </div>
         </div>         
@@ -69,43 +69,66 @@
       <div class="one_dialog fadeIn fadeIn-20ms">
         <div class="left_dialog_app_edge"></div>
         <div class="left_dialog_app_image"></div>
-<!--         <div class="left_dialog_app_name">{{app.app_name}}</div> -->
+        <div class="left_dialog_app_name">{{app.app_name}}</div>
         <div class="left_dialog_container">
           <div class="left_dialog_text">
             Hi, I'm service APP <span style="color: #FFBB28;">{{app.app_name}}</span><br/>
-          </div> 
+          </div>
         </div>
       </div>
 
       <div class="one_dialog fadeIn fadeIn-20ms fadeIn-Delay-20ms">
         <div class="left_dialog_app_edge"></div>
         <div class="left_dialog_app_image"></div>
-<!--         <div class="left_dialog_app_name">{{app.app_name}}</div> -->
+        <div class="left_dialog_app_name">{{app.app_name}}</div>
         <div class="left_dialog_container">
           <div class="left_dialog_text">
-            <span style="color: #FFBB28;">(1) app_name:</span>
-            {{app.app_name}}<br/>
+            <span style="color: #FFBB28;">
+              (1) APP:
+            </span>
+            {{app.app_name + " " + app.app_version}}<br/>
           </div> 
           <div class="left_dialog_text">
-            <span style="color: #FFBB28;">(2) owner:</span>
-            {{app.owner}}<br/>
-          </div>       
+            <span style="color: #FFBB28;">
+              (2) Service Description:
+            </span>
+          </div>
+          <img 
+            class="image_p1" 
+            src="http://asa.static.gausian.com/service_app/Customer/p1.png" 
+            width="100%" alt=""
+          />
+          <div class="left_dialog_text_2">{{app.detail_p1}}</div>
+          <img 
+            class="image_p2" 
+            src="" 
+            width="100%" alt=""
+          />
+          <div class="left_dialog_text_2">{{app.detail_p2}}</div>
+          <img 
+            class="image_p3" 
+            src="" 
+            width="100%" alt=""
+          />
+          <div class="left_dialog_text_2">{{app.detail_p3}}</div>
           <div class="left_dialog_text">
-            <span style="color: #FFBB28;">(3) latest_version:</span>
-            {{app.latest_version}}<br/>
-          </div>   
+            <span style="color: #FFBB28;">
+              (3) API Examples:
+            </span>
+          </div>
+          <div class="left_dialog_text_2">
+            Example 1: {{app.example_1}} <br/>
+            Example 2: {{app.example_2}} <br/>
+            Example 3: {{app.example_3}} <br/>
+            Example 4: {{app.example_4}} <br/>
+            Example 5: {{app.example_5}} <br/>
+          </div>
           <div class="left_dialog_text">
-            <span style="color: #FFBB28;">(4) security_level:</span>
-            {{app.low}}<br/>
-          </div>     
-          <div class="left_dialog_text">
-            <span style="color: #FFBB28;">(5) description:</span>
-            {{app.api}}<br/>
-          </div>    
-          <div class="left_dialog_text">
-            <span style="color: #FFBB28;">(6) example:</span>
-            {{app.example}}<br/>
-          </div>  
+            <span style="color: #FFBB28;">
+              (4) Example User-APP:
+            </span>
+            {{app.example_project}}
+          </div>
         </div>
       </div>
 
@@ -127,7 +150,7 @@
         <div class="one_dialog fadeIn fadeIn-20ms">
           <div class="left_dialog_app_edge"></div>
           <div class="left_dialog_app_image"></div>
-  <!--         <div class="left_dialog_app_name">{{app.app_name}}</div> -->
+          <div class="left_dialog_app_name">{{app.app_name}}</div>
           <div class="left_dialog_container">
             <div class="left_dialog_text">
               {{asa_response}}
@@ -170,6 +193,8 @@
     <script src="components/version/version-directive.js"></script>
     <script src="components/version/interpolate-filter.js"></script>
   </div>
+
+<button onclick="change_br()">Try it</button>
 
 </body>
 </html>

@@ -11,7 +11,7 @@ apiApp.controller('ASA_API_Ctrl', function($scope, $http) {
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
     },
-    data: $.param({user_app_id:'app_id', service_app_name:'ServiceAppDataRead', request_string: "GET:;"})
+    data: $.param({user_app_id:'app_id', service_app_name:'ServiceAppInfo', request_string: "Get"})
   };
 
   $http(req).success(function(data) {
@@ -23,7 +23,7 @@ apiApp.controller('ASA_API_Ctrl', function($scope, $http) {
   $scope.showInfo = function(app, index) {
       $scope.app=app;
       $scope.selected = index;
-      $scope.message = $scope.app.example; // assign the default message is the example
+      $scope.message = $scope.app.example_1; // assign the default message is the example
   }
   $scope.orderProp = 'customer_id';
 

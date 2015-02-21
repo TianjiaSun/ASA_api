@@ -15,12 +15,18 @@ $(document).ready(function() {
     $("#message_dialog").fadeIn(200);
     $("#response_dialog").hide();
     $("#response_dialog").delay(200).fadeIn(200);
-    $("#dialog_container").delay(500).animate({scrollTop:$(document).height()}, 1000);
+    $("#dialog_container").delay(500).animate({scrollTop:$(document).height()}, 1000);    
+  });
+
+  $(".list_container").click(function() {
+    $("#dialog_container").delay(200).animate({scrollTop:$(document).height()}, 1000);    
   });
 
   $(document).keypress(function(e){
     if(e.keyCode==13)
     $('#bottom_send').click();
   });
+
+
 
 })
