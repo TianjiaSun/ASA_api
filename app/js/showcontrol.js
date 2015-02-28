@@ -22,6 +22,12 @@ $(document).ready(function() {
     $("#dialog_container").delay(200).animate({scrollTop:$(document).height()}, 1000);    
   });
 
+  $("#right_expend_button").click(function() {
+      $("#right_dialog_container").animate({'width': '40vw'}, 500);
+      $("#right_dialog_container").delay(500).animate({'height': '200px'}, 500);
+      $("#right_expend_button").hide();
+  });
+
   $(document).keypress(function(e){
     if(e.keyCode==13)
     $('#bottom_send').click();

@@ -126,47 +126,47 @@
 	cursor:pointer;
 }
 .app_edge {
-	width: 58px;
-	height: 62px;
-	background: rgb(0, 0, 0);
-	border-radius: 14px;
-	margin-top: 9px;
-	margin-left: 16px;
-	box-shadow: 0 0 10px white;
+width: 58px;
+height: 62px;
+background: rgb(0, 0, 0);
+border-radius: 14px;
+margin-top: 9px;
+margin-left: 22px;
+box-shadow: 0 0 10px white;
 }
 .app_image {
-	position: absolute;
-	width: 56px;
-	height: 56px;
-	background: rgb(51, 176, 240);
-	border-radius: 12px;
-	margin-top: -62px;
-	margin-left: 17px;
-	box-shadow: 0 1px 5px white;
+position: absolute;
+width: 56px;
+height: 56px;
+background: rgb(51, 176, 240);
+border-radius: 12px;
+margin-top: -62px;
+margin-left: 23px;
+box-shadow: 0 1px 5px white;
 }
 .app_name {
-	position: absolute;
-	top: 10px;
-	left: 86px;
-	font-family: arial;
-	color: rgb(231, 231, 231);
-	font-size: 16px;
+position: absolute;
+top: 10px;
+left: 92px;
+font-family: arial;
+color: rgb(231, 231, 231);
+font-size: 16px;
 }
 .app_discription {
-	position: absolute;
-	top: 32px;
-	left: 86px;
-	font-family: arial;
-	color: rgb(177, 176, 176);
-	font-size: 13px;
+position: absolute;
+top: 32px;
+left: 92px;
+font-family: arial;
+color: rgb(177, 176, 176);
+font-size: 13px;
 }
 .app_price {
-	position: absolute;
-	top: 51px;
-	left: 86px;
-	font-family: arial;
-	color: rgb(51, 204, 255);
-	font-size: 14px;
+position: absolute;
+top: 51px;
+left: 92px;
+font-family: arial;
+color: rgb(51, 204, 255);
+font-size: 14px;
 }
 #dialog_container {
 	position: absolute;
@@ -290,7 +290,7 @@
 	padding-top: 3px;
 	padding-bottom: 9px;
 }
-.right_dialog_container {
+#right_dialog_container {
 	position: relative;
 	top: 9px;
 	float: right;
@@ -322,7 +322,7 @@
 	border-right: 20px solid rgb(85, 85, 85);
 	border-bottom: 9px solid transparent;
 }
-.right_dialog_container:before {
+#right_dialog_container:before {
 	content: "";
 	position: absolute;
 	left: 100%;
@@ -339,7 +339,7 @@
 .right_dialog_container:hover {
 	box-shadow: 0 0 12px 2px rgb(250, 250, 250);
 }*/
-.right_expend_button {
+#right_expend_button {
 	position: absolute;
 	float: right;
 	right: 13px;
@@ -356,7 +356,7 @@
 	line-height: 22px;
 	box-shadow: 0 0 5px rgb(15, 15, 15);
 }
-.right_expend_button:hover {
+#right_expend_button:hover {
 	background: rgb(51, 176, 240);
 	color: white;
 	cursor: pointer;
