@@ -158,9 +158,22 @@
                 {{message}}
               </div>
               <div id="right_expend_button">+</div>
-              <div id="code_container">
-                /* This is automatically generated ASA request code. */
-              </div>
+              <pre id="code_container">
+  /* This is automatically generated AnguarJS Code for ASA request. */
+  $scope.ASAsend = function(app, message) {
+    var req = {
+      method: 'POST',
+      url: 'http://asa.gausian.com',
+      data: $.param({
+          user_app_id:'app_id',
+          service_app_name: '{{app.app_name}}'
+          request_string: '{{message}}'
+    })};
+    $http(req).success(function(data) {
+      $scope.asa_response = angular.fromJson(data.response);
+    });
+  };
+              </pre>
               <div id="copy_bn">Copy</div>
             </div>
           </div>
