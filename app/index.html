@@ -145,29 +145,35 @@
         </div>
       </div>
 
-      <div id="message_dialog">
-        <div class="one_dialog">
-          <div class="right_dialog_app_edge"></div>
-          <div class="right_dialog_app_image"></div>
-          <div class="right_dialog_app_name">Your APP</div>
-          <div id="right_dialog_container">
-            <div class="right_dialog_text">
-              {{message}}
+      <div id="messages">
+        <div id="message_dialog">
+          <div class="one_dialog">
+            <div class="right_dialog_app_edge"></div>
+            <div class="right_dialog_app_image"></div>
+            <div class="right_dialog_app_name">Your APP</div>
+            <div id="right_dialog_container">
+              <div class="right_dialog_text">
+                {{message}}
+              </div>
+              <div id="right_expend_button">+</div>
+              <div id="code_container">
+                /* This is automatically generated ASA request code. */
+              </div>
+              <div id="copy_bn">Copy</div>
             </div>
-            <div id="right_expend_button">+</div>
           </div>
         </div>
-      </div>
 
-      <div id="response_dialog">
-        <div class="one_dialog fadeIn fadeIn-20ms">
-          <div class="left_dialog_app_edge"></div>
-          <div class="left_dialog_app_image"></div>
-          <div class="left_dialog_app_name">{{app.app_name}}</div>
-          <div class="left_dialog_container">
-            <div class="left_dialog_text">
-              {{asa_response}}
-            </div> 
+        <div id="response_dialog">
+          <div class="one_dialog fadeIn fadeIn-20ms">
+            <div class="left_dialog_app_edge"></div>
+            <div class="left_dialog_app_image"></div>
+            <div class="left_dialog_app_name">{{app.app_name}}</div>
+            <div class="left_dialog_container">
+              <div class="left_dialog_text">
+                {{asa_response}}
+              </div> 
+            </div>
           </div>
         </div>
       </div>
