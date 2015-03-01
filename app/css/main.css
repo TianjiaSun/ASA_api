@@ -413,6 +413,8 @@ font-size: 14px;
 	padding-top: 7px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	background: transparent;
+	border-width: 0px;
 }
 .left_dialog_text_2{
 	position: relative;
@@ -424,6 +426,19 @@ font-size: 14px;
 	line-height: 22px;
 	text-align: left;
 	text-align: justify;
+	text-decoration: none;
+}
+.left_dialog_text_2:hover{
+	text-decoration: none;
+	color: white;
+}
+.left_dialog_text_2 a {
+	text-decoration: none;
+	color: white;
+}
+.left_dialog_text_2 a:hover {
+	text-decoration: none;
+	color: white;
 }
 .right_dialog_text{
 	font-family: arial;

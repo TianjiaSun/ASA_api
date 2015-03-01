@@ -139,9 +139,11 @@
               (4) Example User-APP:
             </span>
           </div>
+          <a href="{{app.example_project}}" target="_blank">
           <div class="left_dialog_text_2" ng-show="app.example_project != null">
             {{app.example_project}}
           </div>
+          </a>
         </div>
       </div>
 
@@ -170,9 +172,9 @@
             <div class="left_dialog_app_image"></div>
             <div class="left_dialog_app_name">{{app.app_name}}</div>
             <div class="left_dialog_container">
-              <div class="left_dialog_text">
-                {{asa_response}}
-              </div> 
+              <pre class="left_dialog_text">
+                {{asa_response | json}}
+              </pre> 
             </div>
           </div>
         </div>
@@ -212,8 +214,6 @@
     <script src="components/version/version-directive.js"></script>
     <script src="components/version/interpolate-filter.js"></script>
   </div>
-
-<button onclick="change_br()">Try it</button>
 
 </body>
 </html>
