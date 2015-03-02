@@ -32,7 +32,7 @@
             ng-class="{list_selected: $index == selected}"
             >
             <div class="app_edge"></div>
-            <div class="app_image"></div>
+            <img class="app_image" src="{{app.app_icon}}"/>
             <div class="app_name">{{app.app_name}}</div>
             <div class="app_discription">{{app.short_description}}</div>
             <div class="app_price">Price ${{app.pricing_by_month}}/month</div>
@@ -68,7 +68,7 @@
 
       <div class="one_dialog fadeIn fadeIn-20ms">
         <div class="left_dialog_app_edge"></div>
-        <div class="left_dialog_app_image"></div>
+        <img class="left_dialog_app_image" src="{{app.app_icon}}"/>
         <div class="left_dialog_app_name">{{app.app_name}}</div>
         <div class="left_dialog_container">
           <div class="left_dialog_text">
@@ -79,7 +79,7 @@
 
       <div class="one_dialog fadeIn fadeIn-20ms fadeIn-Delay-20ms">
         <div class="left_dialog_app_edge"></div>
-        <div class="left_dialog_app_image"></div>
+        <img class="left_dialog_app_image" src="{{app.app_icon}}"/>
         <div class="left_dialog_app_name">{{app.app_name}}</div>
         <div class="left_dialog_container">
           <div class="left_dialog_text">
@@ -151,7 +151,7 @@
         <div id="message_dialog">
           <div class="one_dialog">
             <div class="right_dialog_app_edge"></div>
-            <div class="right_dialog_app_image"></div>
+            <img class="right_dialog_app_image" src="img/icon.png"/>
             <div class="right_dialog_app_name">Your APP</div>
             <div id="right_dialog_container">
               <div class="right_dialog_text">
@@ -182,7 +182,7 @@
         <div id="response_dialog">
           <div class="one_dialog fadeIn fadeIn-20ms">
             <div class="left_dialog_app_edge"></div>
-            <div class="left_dialog_app_image"></div>
+            <img class="left_dialog_app_image" src="{{app.app_icon}}"/>
             <div class="left_dialog_app_name">{{app.app_name}}</div>
             <div class="left_dialog_container">
               <pre class="left_dialog_text">
