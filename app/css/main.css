@@ -133,7 +133,7 @@
 	border-radius: 14px;
 	margin-top: 9px;
 	margin-left: 22px;
-	box-shadow: 0 0 2px 0px black;
+/*	box-shadow: 0 0 2px 0px black;*/
 }
 .app_image {
 	position: absolute;
@@ -209,7 +209,7 @@
 	border-radius: 14px;
 	margin-top: 6px;
 	margin-left: 40px;
-	box-shadow: 0 0 5px black;
+/*	box-shadow: 0 0 5px black;*/
 }
 .right_dialog_app_edge {
 	position: absolute;
@@ -221,7 +221,7 @@
 	height: 57px;
 	background: rgb(0, 0, 0);
 	border-radius: 14px;
-	box-shadow: 0 0 5px black;
+/*	box-shadow: 0 0 5px black;*/
 }
 .left_dialog_app_image {
 	position: absolute;
@@ -253,7 +253,7 @@
 	margin-top: 62px;
 	margin-left: 3px;
 	font-family: arial;
-	color: rgb(200, 200, 200);
+	color: rgb(50, 50, 50);
 	font-size: 14px;
 	width: 130px;
 	text-align: center;
@@ -271,7 +271,7 @@
 	margin-top: 62px;
 	margin-left: 3px;
 	font-family: arial;
-	color: rgb(200, 200, 200);
+	color: rgb(50, 50, 50);
 	font-size: 14px;
 	width: 130px;
 	text-align: center;
