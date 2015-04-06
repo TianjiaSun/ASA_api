@@ -33,14 +33,16 @@
 	min-height: 600px;
 	height: 100%;
 	overflow: hidden;
-	width: 300px;
+	width: 223px;
 	box-shadow: 0 0 12px;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	direction: rtl; 
+	text-align: left;
 }
 .logo{
 	font-family: arial;
-	font-size: 28px;
+	font-size: 20px;
 	line-height: 30px;
 	position: relative;
 	top: 15px;
@@ -52,41 +54,41 @@
 	font-weight: bold;
 }
 .search_app {
-	position: relative;
-	top: 28px;
-	left: 0px;
-	margin-top: 0px;
-	margin-left: 13px;
-	margin-bottom: 0px;
-	background-color: rgb(0, 176, 240);
-	height: 37px;
-	width: 255px;
-	border-radius: 25px;
-	box-shadow: 0 0 12px black;
-	color: white;
-	z-index: 4;
-	font-size: 18px;
-	font-family: arial;
-	line-height: 50px;
+  position: relative;
+  top: 28px;
+  left: -9px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  background-color: rgb(0, 176, 240);
+  height: 34px;
+  width: 188px;
+  border-radius: 25px;
+  box-shadow: 0 0 12px black;
+  color: white;
+  z-index: 4;
+  font-size: 18px;
+  font-family: arial;
+  line-height: 50px;
 }
 .search_input {
-	position: absolute;
-	top: 65px;
-	left: 18px;
-	margin-top: 0px;
-	margin-left: -1px;
-	background-color: rgb(60, 60, 60);
-	height: 31px;
-	border-radius: 25px;
-	font-family: arial;
-	font-size: 16px;
-	line-height: 32px;
-	color: white;
-	padding-left: 13px;
-	z-index: 100;
-	width: 247px;
-	text-align: left;
-	color: rgb(200,200,200);
+  position: absolute;
+  top: 60px;
+  left: 15px;
+  margin-top: 0px;
+  margin-left: -1px;
+  background-color: rgb(85, 85, 85);
+  height: 30px;
+  border-radius: 25px;
+  font-family: arial;
+  font-size: 16px;
+  line-height: 32px;
+  color: white;
+  padding-left: 13px;
+  z-index: 100;
+  width: 182px;
+  text-align: left;
+  color: rgb(200,200,200);
 }
 .list_container {
 	position: relative;
@@ -111,10 +113,19 @@
 	top: 0px;
 	left: 0px;
 	background-color: rgb(85, 85, 85);
-	height: 78px;
+	height: 66px;
 	overflow: hidden;
-	width: 290px;
-	box-shadow: 0px -3px 8px -3px rgb(0, 0, 0);
+	width: 210px;
+	/*box-shadow: 0px -3px 8px -3px rgb(0, 0, 0);*/
+background: #696a69; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #696a69 0%, #555555 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#696a69), color-stop(100%,#555555)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #696a69 0%,#555555 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #696a69 0%,#555555 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #696a69 0%,#555555 100%); /* IE10+ */
+background: linear-gradient(135deg,  #696a69 0%,#555555 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#696a69', endColorstr='#555555',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 .app_unit:hover {
 	background: -moz-linear-gradient(top,  #33b0f0 0%, #555555 100%); /* FF3.6+ */
@@ -127,47 +138,49 @@
 	cursor:pointer;
 }
 .app_edge {
-	width: 58px;
-	height: 62px;
+	width: 52px;
+	height: 52px;
 	background: rgb(0, 0, 0);
-	border-radius: 14px;
+	border-radius: 26px;
 	margin-top: 9px;
 	margin-left: 22px;
-/*	box-shadow: 0 0 2px 0px black;*/
+	box-shadow: 0 0 2px 0px black;
 }
 .app_image {
 	position: absolute;
-	width: 56px;
-	height: 56px;
-	background: rgb(51, 176, 240);
-	border-radius: 12px;
-	margin-top: -62px;
-	margin-left: 23px;
-/*	box-shadow: 0 1px 5px white;*/
+	top: 0px;
+	left: 0px;
+  	width: 52px;
+  	height: 52px;
+  	background: rgb(51, 176, 240);
+  	border-radius: 26px;
+  	margin-top: 7px;
+  	margin-left: 13px;
+   	box-shadow: 0 1px 5px black; 
 }
 .app_name {
-	position: absolute;
-	top: 10px;
-	left: 92px;
-	font-family: arial;
-	color: rgb(231, 231, 231);
-	font-size: 16px;
+  position: absolute;
+  top: 8px;
+  left: 76px;
+  font-family: arial;
+  color: rgb(231, 231, 231);
+  font-size: 16px;
 }
 .app_discription {
-	position: absolute;
-	top: 32px;
-	left: 92px;
-	font-family: arial;
-	color: rgb(177, 176, 176);
-	font-size: 13px;
+  position: absolute;
+  top: 26px;
+  left: 75px;
+  font-family: arial;
+  color: rgb(177, 176, 176);
+  font-size: 13px;
 }
 .app_price {
-	position: absolute;
-	top: 51px;
-	left: 92px;
-	font-family: arial;
-	color: rgb(51, 204, 255);
-	font-size: 14px;
+position: absolute;
+  top: 42px;
+  left: 75px;
+  font-family: arial;
+  color: rgb(0, 149, 199);
+  font-size: 14px;
 }
 #dialog_container {
 	position: absolute;
@@ -177,7 +190,7 @@
 	padding-top: 15px;
 	padding-bottom: 130px;
 	padding-right: 0px;
-	left: 300px;
+	left: 224px;
 	min-height: 600px;
 	min-width: 600px;
 	background-color: transparent;
@@ -209,7 +222,7 @@
 	border-radius: 14px;
 	margin-top: 6px;
 	margin-left: 40px;
-/*	box-shadow: 0 0 5px black;*/
+	box-shadow: 0 0 5px black;
 }
 .right_dialog_app_edge {
 	position: absolute;
@@ -218,20 +231,20 @@
 	margin-top: 6px;
 	margin-right: 0;
 	width: 54px;
-	height: 57px;
+	height: 55px;
 	background: rgb(0, 0, 0);
 	border-radius: 14px;
-/*	box-shadow: 0 0 5px black;*/
+	 box-shadow: 0 2px 6px 0px rgb(49, 49, 49);
 }
 .left_dialog_app_image {
-	position: absolute;
-	width: 52px;
-	height: 52px;
-	background: rgb(51, 204, 255);
-	border-radius: 12px;
-	margin-top: 6px;
-	margin-left: 41px;
-/*	box-shadow: 0 1px 5px white;*/
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgb(51, 204, 255);
+  border-radius: 25px;
+  margin-top: 6px;
+  margin-left: 41px;
+  box-shadow: 0 1px 5px rgb(49, 49, 49);
 }
 .left_dialog_app_image:hover {
 	cursor: pointer;
@@ -459,132 +472,132 @@
 	text-align: left;
 }
 .bottom_container {
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	margin-bottom: 40px;
-	margin-left: 370px;
-	margin-right: 70px;
-	background-color: rgb(0, 176, 240);
-	height: 50px;
-	border-radius: 25px;
-	box-shadow: 0 0 14px 2px black;
-	border: 2px rgb(138, 188, 204);
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 40px;
+  margin-left: 275px;
+  margin-right: 70px;
+  background-color: rgb(0, 176, 240);
+  height: 46px;
+  border-radius: 25px;
+  box-shadow: 0 0 14px 2px black;
+  border: 2px rgb(138, 188, 204);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 .bottom_option {
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	margin-bottom: 45px;
-	margin-left: 376px;
-	background-color: rgb(255, 157, 0);
-	height: 40px;
-	width: 40px;
-	border-radius: 25px;
-	font-family: arial;
-	font-size: 16px;
-	font-weight: bold;
-	line-height: 42px;
-	color: white;
-	text-align: center;
-	box-shadow: 0 0 10px black;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin-bottom: 45px;
+  margin-left: 281px;
+  background-color: rgb(255, 157, 0);
+  height: 36px;
+  width: 36px;
+  border-radius: 25px;
+  font-family: arial;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 42px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 10px black;
 }
 .bottom_option:hover {
 	background-color: black;
 	cursor: pointer;
 }
 .option_line_1 {
-	position: relative;
-	top: 11px;
-	left: 8px;
-	background-color: rgb(250, 250, 250);
-	height: 4px;
-	width: 23px;
-	border-radius: 0;
+  position: relative;
+  top: 11px;
+  left: 6px;
+  background-color: rgb(250, 250, 250);
+  height: 3px;
+  width: 23px;
+  border-radius: 0;
 }
 .option_line_2 {
-	position: relative;
-	top: 14px;
-	left: 8px;
-	background-color: rgb(250, 250, 250);
-	height: 4px;
-	width: 23px;
-	border-radius: 0;
+position: relative;
+  top: 14px;
+  left: 6px;
+  background-color: rgb(250, 250, 250);
+  height: 3px;
+  width: 23px;
+  border-radius: 0;
 }
 .option_line_3 {
-	position: relative;
-	top: 17px;
-	left: 8px;
-	background-color: rgb(250, 250, 250);
-	height: 4px;
-	width: 23px;
-	border-radius: 0;
+  position: relative;
+  top: 18px;
+  left: 6px;
+  background-color: rgb(250, 250, 250);
+  height: 3px;
+  width: 23px;
+  border-radius: 0;
 }
 #bottom_input {
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	margin-bottom: 45px;
-	margin-left: 425px;
-	margin-right: 206px;
-	background-color: rgb(80, 80, 80);
-	height: 40px;
-	border-radius: 25px;
-	border-width: 0px;
-	font-family: arial;
-	font-size: 18px;
-	line-height: 40px;
-	color: rgb(220,220,220);
-	padding-left: 0px;
-	padding-right: 0px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 45px;
+  margin-left: 327px;
+  margin-right: 206px;
+  background-color: rgb(80, 80, 80);
+  height: 36px;
+  border-radius: 25px;
+  border-width: 0px;
+  font-family: arial;
+  font-size: 18px;
+  line-height: 36px;
+  color: rgb(220,220,220);
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .bottom_input_text{
-	position: relative;
-	bottom: 0px;
-	left: 0px;
-	width: 100%;
-	right: 0px;
-	margin-bottom: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-right: 0px;
-	background-color: transparent;
-	height: 40px;
-	border-radius: 25px;
-	border-width: 0px;
-	font-family: arial;
-	font-size: 18px;
-	line-height: 40px;
-	color: rgb(220,220,220);
-	text-align: right;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  right: 0px;
+  margin-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 0px;
+  background-color: transparent;
+  height: 37px;
+  border-radius: 25px;
+  border-width: 0px;
+  font-family: arial;
+  font-size: 18px;
+  line-height: 37px;
+  color: rgb(220,220,220);
+  text-align: right;
 }
 .bottom_input_text:focus{
 	outline: 0px;
 	background-color: rgb(40, 40, 40);
 }
 #bottom_send {
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-	margin-bottom: 45px;
-	margin-right: 75px;
-	background-color: rgb(255, 157, 0);
-	height: 40px;
-	width: 120px;
-	border-radius: 25px;
-	font-family: arial;
-	font-weight: bold;
-	font-size: 16px;
-	font-weight: bold;
-	line-height: 42px;
-	color: rgb(250, 250, 250);
-	text-align: center;
-	box-shadow: 0 0 10px black;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: 45px;
+  margin-right: 75px;
+  background-color: rgb(255, 157, 0);
+  height: 36px;
+  width: 120px;
+  border-radius: 25px;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 39px;
+  color: rgb(250, 250, 250);
+  text-align: center;
+  box-shadow: 0 0 10px black;
 }
 #bottom_send:hover{
 	background-color: rgb(0, 0, 0);
