@@ -37,8 +37,11 @@ $(document).ready(function() {
   });
 
   $(document).keypress(function(e){
-    if(e.keyCode==13)
-    $('#bottom_send').click();
+    if(e.keyCode==13 ){
+      if($(".bottom_input_text").is(":focus")){
+        $('#bottom_send').click();
+      }
+    }
   });
 
 })

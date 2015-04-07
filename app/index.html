@@ -23,9 +23,9 @@
     <div class="left_container">    
       <div class="logo">Services on ASA</div>
       <div class="search_app"></div>
-      <div class="search_input">Search Services Here</div>
+      <input class="search_input" placeholder="Search Services" ng-model="query" ng-keydown="selectSearch($event)"></input>
       <div class="list_container">
-        <div ng-repeat="app in apps | filter:query | orderBy:orderProp">
+        <div ng-repeat="app in (filtedApps = (apps | filter:query))">
           <div 
             class="app_unit" 
             ng-click="showInfo(app, $index)" 
@@ -33,7 +33,6 @@
             >
             <img class="app_image" src="{{app.app_icon}}"/>
             <div class="app_name">{{app.app_name}}</div>
-            <!-- <div class="app_discription">{{app.short_description}}</div> -->
             <div class="app_price">FREE</div>
           </div>
         </div>         
@@ -41,29 +40,6 @@
     </div>
 
     <div id="dialog_container">
-
-<!--       <div class="one_dialog fadeIn fadeIn-50ms fadeIn-Delay-50ms">
-        <div class="left_dialog_app_edge"></div>
-        <div class="left_dialog_app_image"></div>
-        <div class="left_dialog_app_name">Customers</div>
-        <div class="left_dialog_container">
-          <div class="left_dialog_text">
-            Hi, I am service-app "Customers" short for 
-            "<span style="color: #FFBB28;">CustomerDataReadWrite</span>". <br/>
-            Talk to me, your APP can read and write to user's customer data. <br/>
-            Send "<span style="color: #FFBB28;">help</span>" to know my API.
-          </div>
-        </div>
-      </div> -->
-
-<!--       <div class="one_dialog fadeIn fadeIn-50ms fadeIn-Delay-100ms">
-        <div class="right_dialog_app_edge"></div>
-        <div class="right_dialog_app_image"></div>
-        <div class="right_dialog_app_name">Your APP</div>
-        <div class="right_dialog_container">
-          <div class="right_dialog_text">help</div>
-        </div>
-      </div>  -->    
 
       <div class="one_left_dialog fadeIn fadeIn-20ms">
         <img class="left_dialog_app_image" src="{{app.app_icon}}"/>

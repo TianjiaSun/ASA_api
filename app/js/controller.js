@@ -52,4 +52,12 @@ apiApp.controller('ASA_API_Ctrl', function($scope, $http) {
     });
   };
 
+  $scope.selectSearch = function(keyEvent) {
+    // if escape is input in search box
+    if (keyEvent.which === 27){
+      $scope.query = "";
+      $(".search_input").blur();
+    }
+  }  
+
 });
