@@ -23,7 +23,7 @@
     <div class="left_container">    
       <div class="logo">Services on ASA</div>
       <div class="search_app"></div>
-      <input class="search_input" placeholder="Search Services" ng-model="query" ng-keydown="selectSearch($event)"></input>
+      <input class="search_input" placeholder="Search APPs" ng-model="query" ng-keydown="selectSearch($event)"></input>
       <div class="list_container">
         <div ng-repeat="app in (filtedApps = (apps | filter:query))">
           <div 
