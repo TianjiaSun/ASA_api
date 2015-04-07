@@ -5,6 +5,7 @@ $(document).ready(function() {
 
   $( ".list_container" ).delegate( ".app_unit", "click", function() {
     $("#dialog_container").hide();
+    $("#welcome_container").hide();
     $("#dialog_container").fadeIn(500);
     $("#message_dialog").hide(); //clear previous message dialog from previous chatting
     $("#response_dialog").hide(); //clear previous message dialog from previous chatting
