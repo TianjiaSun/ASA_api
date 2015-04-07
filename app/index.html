@@ -23,7 +23,7 @@
     <div class="left_container">    
       <div class="logo">All ASA Services</div>
       <div class="search_app"></div>
-      <div class="search_input">Search here</div>
+      <div class="search_input">Search Services Here</div>
       <div class="list_container">
         <div ng-repeat="app in apps | filter:query | orderBy:orderProp">
           <div 
@@ -33,8 +33,8 @@
             >
             <img class="app_image" src="{{app.app_icon}}"/>
             <div class="app_name">{{app.app_name}}</div>
-            <div class="app_discription">{{app.short_description}}</div>
-            <div class="app_price">Price ${{app.pricing_by_month}}/month</div>
+            <!-- <div class="app_discription">{{app.short_description}}</div> -->
+            <div class="app_price">FREE</div>
           </div>
         </div>         
       </div>   

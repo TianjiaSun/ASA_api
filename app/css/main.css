@@ -34,7 +34,7 @@
 	height: 100%;
 	overflow: hidden;
 	width: 223px;
-	box-shadow: 0 0 12px;
+	box-shadow: 0 0 13px 1px black;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	direction: rtl; 
@@ -62,7 +62,7 @@
   margin-left: 0px;
   margin-bottom: 0px;
   background-color: rgb(0, 176, 240);
-  height: 34px;
+  height: 32px;
   width: 188px;
   border-radius: 25px;
   box-shadow: 0 0 12px black;
@@ -80,17 +80,19 @@
   margin-top: 0px;
   margin-left: -1px;
   background-color: rgb(85, 85, 85);
-  height: 30px;
+  height: 28px;
   border-radius: 25px;
   font-family: arial;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 13px;
+  line-height: 29px;
   color: white;
-  padding-left: 13px;
+  text-align: center;
+  /* padding-left: 13px; */
   z-index: 100;
-  width: 181px;
-  text-align: left;
+  width: 182px;
+  text-align: center;
   color: rgb(200,200,200);
+  box-shadow: inset 0 0 2px black;
 }
 .list_container {
 	position: relative;
@@ -162,10 +164,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#696a69', end
 }
 .app_name {
   position: absolute;
-  top: 8px;
+  top: 14px;
   left: 76px;
   font-family: arial;
-  color: rgb(231, 231, 231);
+  color: rgb(241, 241, 241);
   font-size: 16px;
 }
 .app_discription {
@@ -178,7 +180,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#696a69', end
 }
 .app_price {
 position: absolute;
-  top: 42px;
+  top: 33px;
   left: 75px;
   font-family: arial;
   color: rgb(0, 149, 199);
@@ -602,6 +604,7 @@ position: relative;
   line-height: 37px;
   color: rgb(220,220,220);
   text-align: right;
+  box-shadow: inset 0 0 3px black;
 }
 .bottom_input_text:focus{
 	outline: 0px;
