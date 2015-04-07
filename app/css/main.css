@@ -44,11 +44,11 @@ body {
 }
 .logo{
   font-family: arial;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 30px;
   position: relative;
-  top: 15px;
-  right: 3px;
+  top: 23px;
+  right: -5px;
   width: 200px;
   width: 300;
   text-align: center;
@@ -58,7 +58,7 @@ body {
 }
 .search_app {
   position: relative;
-  top: 28px;
+  top: 31px;
   left: 13px;
   margin-top: 0px;
   margin-left: 0px;
@@ -77,7 +77,7 @@ body {
 .search_input {
   position: absolute;
   float: right;
-  top: 60px;
+  top: 63px;
   right: 12px;
   margin-top: 0px;
   margin-left: -1px;
