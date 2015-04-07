@@ -60,4 +60,8 @@ apiApp.controller('ASA_API_Ctrl', function($scope, $http) {
     }
   }  
 
+  $scope.copyExample = function(example) {
+    $scope.message = example;
+  }  
+
 });
